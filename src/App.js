@@ -1,4 +1,3 @@
-import './App.css';
 import Card from './components/molecules/Card';
 
 function App() {

@@ -1,11 +1,10 @@
-@import '../../assets/styles/style.scss';
+@import '../../../assets/styles/style.scss';
 
 .cardBox {
     display: flex;
     overflow: hidden;
-    width: 379px;
-    box-shadow: 0px 0.25rem 0.5rem $boxShadow;
-    border-radius: 0.3rem;
+    flex: 0 1 33.333%;
+    @include boxShadow;
     img {
         height: 100%;
         object-fit: cover;
@@ -13,19 +12,18 @@
     .info {
         display: flex;
         flex-direction: column;
-        gap: .7rem;
+        gap: 0.7rem;
         justify-content: center;
-        align-items: flex-start;
         margin-left: 1.3rem;
     }
     .state {
         @include stateBlock;
-        margin-bottom: .4rem;
+        margin-bottom: 0.4rem;
     }
     .name {
         font-size: 1.2rem;
     }
-    .dateOfBirth {
+    .date {
         opacity: 0.3;
         font-size: 1rem;
     }
