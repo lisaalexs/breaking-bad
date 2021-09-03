@@ -1,0 +1,11 @@
+@mixin stateBlock {
+    display: block;
+  background-color: $stateBackground;
+  color: $stateText;
+  text-align: center;
+  padding: 0.6rem 0.7rem;
+  font-size: .8rem;
+  line-height: 1rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase
+}

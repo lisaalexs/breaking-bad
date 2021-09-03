@@ -1,0 +1,32 @@
+@import '../../assets/styles/style.scss';
+
+.cardBox {
+    display: flex;
+    overflow: hidden;
+    width: 379px;
+    box-shadow: 0px 0.25rem 0.5rem $boxShadow;
+    border-radius: 0.3rem;
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: .7rem;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 1.3rem;
+    }
+    .state {
+        @include stateBlock;
+        margin-bottom: .4rem;
+    }
+    .name {
+        font-size: 1.2rem;
+    }
+    .dateOfBirth {
+        opacity: 0.3;
+        font-size: 1rem;
+    }
+}
