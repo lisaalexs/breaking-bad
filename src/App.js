@@ -1,10 +1,10 @@
-import Card from './components/molecules/Card';
-import './assets/styles/style.scss'
+import './assets/styles/style.scss';
+import CardList from './components/organisms/CardList';
 
 function App() {
   return (
     <div className="app">
-      <Card />
+      <CardList />
     </div>
   );
 }

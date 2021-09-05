@@ -1,17 +1,16 @@
 import React from 'react';
 import s from './style.module.scss';
-import img from '../../../assets/img/walter.png';
 
-const Card = () => {
+const Card = ({ name, birthday, img, status }) => {
   return (
     <div className={s.cardBox}>
       <div className={s.cardImg}>
-        <img src={img} alt="walter"></img>
+        <img className={s.img} src={img} alt="card-img"></img>
       </div>
       <div className={s.info}>
-        <p className={s.state}>Живой</p>
-        <p className={s.name}>Андрей Панасюк</p>
-        <p className={s.date}>23.11.2001</p>
+        <p className={s.state}>{status}</p>
+        <p className={s.name}>{name}</p>
+        <p className={s.date}>{birthday}</p>
       </div>
     </div>
   );
