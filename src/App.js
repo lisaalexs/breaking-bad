@@ -1,8 +1,9 @@
 import Card from './components/molecules/Card';
+import './assets/styles/style.scss'
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Card />
     </div>
   );
