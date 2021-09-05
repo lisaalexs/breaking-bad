@@ -1,0 +1,30 @@
+@import '../../../assets/styles/style.scss';
+
+.cardBox {
+    display: flex;
+    overflow: hidden;
+    flex: 0 1 33.333%;
+    @include boxShadow;
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+        justify-content: center;
+        margin-left: 1.3rem;
+    }
+    .state {
+        @include stateBlock;
+        margin-bottom: 0.4rem;
+    }
+    .name {
+        font-size: 1.2rem;
+    }
+    .date {
+        opacity: 0.3;
+        font-size: 1rem;
+    }
+}

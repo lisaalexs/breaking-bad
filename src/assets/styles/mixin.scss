@@ -1,0 +1,15 @@
+@mixin stateBlock {
+  display: block;
+  background-color: $stateBackground;
+  color: $stateText;
+  text-align: center;
+  padding: 0.6rem 0.7rem;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase
+}
+@mixin boxShadow {
+    box-shadow: 0 0.25rem 0.5rem $boxShadow;
+    border-radius: 0.3rem;
+}
