@@ -3,7 +3,6 @@
 .cardBox {
   display: flex;
   overflow: hidden;
-  height: 7.5rem;
   @include boxShadow;
   .cardImg {
     flex: 0 0 7.75rem;
@@ -19,11 +18,12 @@
     }
     .state {
       @include stateBlock;
-      margin-bottom: 0.4rem;
+      margin: 1.5rem 0;
     }
     .name {
       @include middleLargeText;
       line-height: 1.4rem;
+      margin: 0.6rem 0;
     }
     .date {
       @include smallText;
