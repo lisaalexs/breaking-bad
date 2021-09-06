@@ -6,7 +6,7 @@
   height: 7.5rem;
   @include boxShadow;
   .cardImg {
-    flex: 0 1 33.333%;
+    flex: 0 0 7.75rem;
     height: 100%;
     img {
       width: 100%;
@@ -15,10 +15,6 @@
     }
   }
   .info {
-    display: flex;
-    flex-direction: column;
-    gap: 0.7rem;
-    justify-content: center;
     margin-left: 1.3rem;
     }
     .state {
@@ -26,11 +22,11 @@
       margin-bottom: 0.4rem;
     }
     .name {
-      font-size: 1rem;
+      @include middleLargeText;
       line-height: 1.4rem;
     }
     .date {
-      opacity: 0.3;
-      font-size: 0.8rem;
+      @include smallText;
+      color: $dateColor;
     }
 }

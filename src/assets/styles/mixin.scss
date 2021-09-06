@@ -13,3 +13,9 @@
     box-shadow: 0 0.25rem 0.5rem $boxShadow;
     border-radius: 0.3rem;
 }
+@mixin middleLargeText {
+  font-size: 1rem;
+}
+@mixin smallText {
+  font-size: 0.8rem;
+}

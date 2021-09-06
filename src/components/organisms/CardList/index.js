@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import s from './style.module.scss'
+import style from './style.module.scss'
 import { v4 as uuid4 } from 'uuid';
 import Card from '../../molecules/Card';
 
 function CardList() {
-  const [cards] = useState([
+  const [cards, setCards] = useState([
     {
       id: uuid4(),
       name: "Walter White",
@@ -42,7 +42,7 @@ function CardList() {
     },
   ]);
   return (
-    <div className={s.cardList}>
+    <div className={style.cardList}>
       {cards.map((card) =>
         (<Card
           key={card.id}
