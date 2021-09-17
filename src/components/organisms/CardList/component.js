@@ -1,17 +1,30 @@
 import React from 'react';
 import style from './style.module.scss';
 import Card from '../../molecules/Card/index';
+import ErrorMessage from '../../atoms/ErrorMessage/component';
+import Loader from '../../atoms/Loader/component';
 
-const CardList = ({ cards }) => {
+
+const CardList = ({ characters, isFetching, isError }) => {
   return (
-    <div className={style.cardList}>
-      {cards.map((card) =>
-        (<Card
-          key={card.id}
-          name={card.name}
-          birthday={card.birthday}
-          img={card.img}
-          status={card.status} />))}
+    <div>
+      <div>
+        {isError ? (
+          <ErrorMessage name="Ошибка загрузки данных." />
+        ) : !isFetching ? (
+          <div className={style.cardList}>
+            {characters.map((character) =>
+              (<Card
+                key={character.id}
+                name={character.name}
+                birthday={character.birthday}
+                img={character.img}
+                status={character.status} />))}
+          </div>
+        ) : (
+              <Loader />
+            )}
+      </div>
     </div>
   );
 };
