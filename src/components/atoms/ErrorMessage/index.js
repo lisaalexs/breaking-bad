@@ -1,8 +1,8 @@
 import React from "react";
 import style from "./style.module.scss";
 
-const ErrorMessage = (error) => {
-  return <div className={style.error}>{error.name}</div>;
+const ErrorMessage = ({ name }) => {
+  return <div className={style.error}>{name}</div>;
 };
 
 export default ErrorMessage;

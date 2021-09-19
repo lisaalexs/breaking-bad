@@ -1,8 +1,8 @@
 import React from 'react';
 import style from './style.module.scss';
 import Card from '../../molecules/Card/index';
-import ErrorMessage from '../../atoms/ErrorMessage/component';
-import Loader from '../../atoms/Loader/component';
+import ErrorMessage from '../../atoms/ErrorMessage/';
+import Loader from '../../atoms/Loader/';
 
 
 const CardList = ({ characters, isFetching, isError }) => {

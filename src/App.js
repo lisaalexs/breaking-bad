@@ -1,11 +1,21 @@
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './assets/styles/style.scss';
-import CardList from './components/organisms/CardList';
+import HomePage from './components/pages/homePage';
+import CharacterPage from './components/pages/charachterPage/component';
+import CharactersListPage from './components/organisms/CardList/component';
 
 function App() {
   return (
-    <div className="app">
-      <CardList />
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/list" component={CharactersListPage} />
+        <Route path="/character" component={CharacterPage} />
+        {/* <div className="app">
+        <CardList />
+      </div> */}
+      </Switch>
+    </BrowserRouter>
   );
 }
 

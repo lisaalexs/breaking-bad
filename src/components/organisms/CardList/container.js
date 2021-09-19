@@ -8,11 +8,9 @@ const CardListContainer = () => {
 	const characters = useSelector((state) => state.cardListReducer.characters);
 	const isFetching = useSelector((state) => state.cardListReducer.isFetching);
 	const isError = useSelector((state) => state.cardListReducer.isError);
-
 	useEffect(() => {
 		dispatch(showCharactersList());
 	}, [dispatch]);
-
 	return <CardList characters={characters} isFetching={isFetching} isError={isError} />;
 };
 

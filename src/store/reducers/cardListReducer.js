@@ -26,7 +26,7 @@ const cardListReducer = (state = initialState, action) => {
         isError: action.payload,
       };
     default:
-      return state
+      return state;
   }
 };
 export default cardListReducer;
