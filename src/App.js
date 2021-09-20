@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './assets/styles/style.scss';
-import HomePage from './components/pages/homePage';
-import CharactersListPage from './components/pages/charactersListPage/index';
-import CharacterPage from './components/pages/characterPage/index';
+import HomePage from './components/pages/homePage/';
+import CharactersListPage from './components/pages/charactersListPage/';
+import CharacterPage from './components/pages/characterPage/';
 
 function App() {
   return (
