@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './assets/styles/style.scss';
 import HomePage from './components/pages/homePage';
-import CharacterPage from './components/pages/charachterPage/component';
-import CharactersListPage from './components/organisms/CardList/component';
+import CharactersListPage from './components/pages/charactersListPage/index';
+import CharacterPage from './components/pages/characterPage/index';
 
 function App() {
   return (
