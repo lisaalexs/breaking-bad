@@ -11,9 +11,6 @@ function App() {
         <Route exact path="/" component={HomePage} />
         <Route path="/list" component={CharactersListPage} />
         <Route path="/character" component={CharacterPage} />
-        {/* <div className="app">
-        <CardList />
-      </div> */}
       </Switch>
     </BrowserRouter>
   );
